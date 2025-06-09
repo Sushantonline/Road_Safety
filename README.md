@@ -13,18 +13,19 @@ An AI-powered system for analyzing Indian road accident data using natural langu
 
 ## Installation
 
-1. Clone the repository:
+### 1. Clone the repository:
     git clone https://github.com/yourusername/road-accident-analysis.git
     cd road-accident-analysis
 
-2. Create a virtual environment:
+
+### 2. Create a virtual environment:
     python -m venv venv
     source venv/bin/activate # On Windows: venv\Scripts\activate
 
-3. Install dependencies:
+### 3. Install dependencies:
     pip install -r requirements.txt
 
-4. Install the package:
+### 4. Install the package:
     pip install -e 
 
 ## Usage

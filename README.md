@@ -11,6 +11,62 @@ An AI-powered system for analyzing Indian road accident data using natural langu
 - 🔄 **Multiple Prompt Types**: Analysis, comparison, and chain-of-thought prompting
 - 📱 **Responsive Design**: Works on desktop and mobile devices
 
+### Directory Structure
+    road_accident_analysis/
+    │
+    ├── data/
+    │   ├── raw/
+    │   │   ├── pdfs/
+    │   │   └── extracted_text/
+    │   ├── processed/
+    │   │   ├── dataframes/
+    │   │   └── cot_dataset/
+    │   └── models/
+    │
+    ├── src/
+    │   ├── __init__.py
+    │   ├── data_processing/
+    │   │   ├── __init__.py
+    │   │   ├── pdf_parser.py
+    │   │   ├── table_extractor.py
+    │   │   └── text_processor.py
+    │   ├── llm/
+    │   │   ├── __init__.py
+    │   │   ├── cot_generator.py
+    │   │   ├── model_trainer.py
+    │   │   └── query_processor.py
+    │   ├── visualization/
+    │   │   ├── __init__.py
+    │   │   ├── plot_generator.py
+    │   │   └── plot_recommender.py
+    │   └── utils/
+    │       ├── __init__.py
+    │       ├── config.py
+    │       └── helpers.py
+    │
+    ├── streamlit_app/
+    │   ├── __init__.py
+    │   ├── app.py
+    │   ├── components/
+    │   │   ├── __init__.py
+    │   │   ├── data_explorer.py
+    │   │   ├── query_interface.py
+    │   │   └── visualization_panel.py
+    │   └── pages/
+    │       ├── 01_Data_Overview.py
+    │       ├── 02_Query_Interface.py
+    │       ├── 03_Model_Training.py
+    │       └── 04_Analytics_Dashboard.py
+    │
+    ├── config/
+    │   ├── model_config.yaml
+    │   └── data_config.yaml
+    │
+    ├── requirements.txt
+    ├── setup.py
+    └── README.md
+
+
 ## Installation
 
 ### 1. Clone the repository:

@@ -54,24 +54,24 @@ trainer.train_model(training_dataset)
 ### Using the Query Interface
     from src.llm.query_processor import QueryProcessor, ResponseGenerator
 
-Initialize
-processor = QueryProcessor()
-generator = ResponseGenerator(processor)
+### Initialize
+    processor = QueryProcessor()
+    generator = ResponseGenerator(processor)
+    
+    Load your dataframes
+    dataframes = {
+    'yearly_stats': your_yearly_df,
+    'state_wise': your_state_df,
+    ... other dataframes
+    }
+    processor.load_dataframes(dataframes)
 
-Load your dataframes
-dataframes = {
-'yearly_stats': your_yearly_df,
-'state_wise': your_state_df,
-# ... other dataframes
-}
-processor.load_dataframes(dataframes)
-
-Ask questions
-result = generator.generate_response(
-"What is the trend in road accidents over the past 5 years?",
-prompt_type="cot"
-)
-print(result['response'])
+### Ask questions
+    result = generator.generate_response(
+    "What is the trend in road accidents over the past 5 years?",
+    prompt_type="cot"
+    )
+    print(result['response'])
 
 
 ## Data Structure
